@@ -1,0 +1,456 @@
+.logo {
+    width: 332%;
+    float: left;
+    height: 79px;
+    margin-left: -124px;
+}
+
+.navbar {
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Bebas', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 30px 10px;
+}
+
+.navbar a {
+    color: #00000099;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+.active1{
+    color: #002b64;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: #2ea3f2;
+    margin-bottom: 4px;
+}
+.box{
+    border: 1px solid black;
+    width: 265px;
+    border-radius: 38px;
+}
+.search{
+    border:none;
+    font-size: 17px;
+    padding: 12px 7px;
+    border-radius: 38px;
+    outline-style: none;
+}
+
+.request{
+    border: 1px solid white;
+    background-color: #008def;
+    color: white;
+    padding: 9px;
+    margin-top: 3px;
+    font-size: 15px;
+}
+.apply{
+    border: 1px solid white;
+    background-color: #ffcb00;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 14px;
+    width: 110px;
+}
+.shake {
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.tea{
+    font-size: 18px;
+    position: absolute;
+    margin-top: 10px;
+}
+.img2{
+    width: 56%;
+    position: absolute;
+    vertical-align: middle;
+    padding-left: 4px;
+}
+@media all and (max-width:981px) {
+    .navbar {
+        flex-direction: column;
+        position: sticky;
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+
+    }
+
+    .nav-list .list-item {
+        display: block;
+        background-color: white;
+        color: #666;
+        border-bottom: 2px solid black(0,0,0,.03);
+        width: 80%;
+        float: right;
+        margin-right: 8%;
+    }
+    .tea{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .img{
+        position: relative;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .logo{
+        float: left;
+    }
+
+    .active {
+        display: block;
+    }
+    .box1{
+        width: 90%;
+        display: center;
+    }
+    .search{
+        width: 90%;
+        display: center;
+    }
+    .request{
+        width: 90%;
+        display: center;
+    }
+    .apply{
+        width: 90%;
+        display: center;
+    }
+}
+@media all and (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        position: sticky;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 58px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        display: none;
+
+    }
+
+    .nav-list .list-item {
+        display: block;
+        background-color: white;
+        color: #666;
+        border-bottom: 2px solid black(0,0,0,.03);
+        width: 48%;
+        float: right;
+        margin-right: 8%;
+        margin-top: -10px;
+    }
+    .tea{
+        font-size: 16px;
+    margin-left: 55px;
+    font-weight: 600;
+    }
+    .img{
+        position: relative;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .logo{
+        float: left;
+    }
+
+    .active {
+        display: block;
+    }
+    .box1{
+        width: 100%;
+        border-radius: 15px;
+        display: center;
+        vertical-align: middle;
+    }
+    .search{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+    }
+    .box{
+        margin-left: 137px;
+    }
+    .request{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: -225px;
+    }
+    .apply{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: -205px;
+    }
+}
+@media all and (max-width:425px) {
+    body{
+        max-width: 425px;
+    }
+    .navbar {
+        flex-direction: column;
+        position: sticky;
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 34px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        display: none;
+
+    }
+
+    .nav-list .list-item {
+        display: block;
+        background-color: white;
+        color: #666;
+        border-bottom: 2px solid black(0,0,0,.03);
+        width: 77%;
+        float: right;
+        margin-right: 1%;
+        margin-top: -10px;
+    }
+    .box{
+        margin-left: 178px;
+    }
+    .tea{
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 64px;
+    }
+    .img{
+        position: relative;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .logo{
+        float: left;
+    }
+
+    .active {
+        display: block;
+    }
+    .box1{
+        width: 100%;
+        border-radius: 15px;
+        display: center;
+        vertical-align: middle;
+    }
+    .search{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+    }
+    .request{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: -127px;
+    }
+    .apply{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: -109px;
+    }
+}
+@media all and (max-width:375px) {
+    .navbar {
+        flex-direction: column;
+        position: sticky;
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+      right: 34px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        display: none;
+
+    }
+
+
+    .nav-list .list-item {
+        display: block;
+        background-color: white;
+        color: #666;
+        border-bottom: 2px solid black(0,0,0,.03);
+        width: 80%;
+        float: right;
+        margin-right: 8%;
+        margin-top: -10px;
+    }
+    .tea{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .img{
+        position: relative;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .logo{
+        float: left;
+    }
+
+    .active {
+        display: block;
+    }
+    .box1{
+        width: 100%;
+        border-radius: 15px;
+        display: center;
+        vertical-align: middle;
+    }
+    .search{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+    }
+    .request{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: 200px;
+    }
+    .apply{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: 208px;
+    }
+}
+@media all and (max-width:320px) {
+    .navbar {
+        flex-direction: column;
+        position: sticky;
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 34px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        display: none;
+
+    }
+
+
+    .nav-list .list-item {
+        display: block;
+        background-color: white;
+        color: #666;
+        border-bottom: 2px solid black(0,0,0,.03);
+        width: 80%;
+        float: right;
+        margin-right: 8%;
+        margin-top: -10px;
+    }
+    .tea{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .img{
+        position: relative;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .logo{
+        float: left;
+    }
+
+    .active {
+        display: block;
+    }
+    .box1{
+        width: 100%;
+        border-radius: 15px;
+        display: center;
+        vertical-align: middle;
+    }
+    .search{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+    }
+    .request{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    .apply{
+        width: 70%;
+        display: center;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}
